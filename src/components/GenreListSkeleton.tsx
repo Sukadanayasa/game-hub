@@ -8,7 +8,7 @@ import {
 
 const GenreListSkeleton = () => {
   return (
-    <ListItem paddingY="5px">
+    <ListItem>
       <HStack>
         <Skeleton boxSize="32px" borderRadius={8} />
         <SkeletonText noOfLines={1} width="80px" skeletonHeight={6} />
