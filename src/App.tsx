@@ -12,6 +12,7 @@ function App() {
   const [selectedPlatform, setSelectedPlatform] = useState<Platform | null>(
     null
   );
+
   return (
     <Grid
       templateAreas={{
@@ -34,7 +35,7 @@ function App() {
           />
         </GridItem>
       </Show>
-      <GridItem area="main">
+      <GridItem area="main" padding="10px">
         <PlatformSelector
           selectedPlatform={selectedPlatform}
           onSelectPlatform={(platform) => setSelectedPlatform(platform)}
